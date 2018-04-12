@@ -22,7 +22,7 @@ With the `-p` parameter you can play the music that matches the given pattern:
 which will launch `cvlc`. Don't panic if nothing pops up, because `cvlc` doesn't have an interface. If you like to exit, simply press `CTRL-C`.
 
 # Put it inside your search path
-Typically you create a `~/bin/` directory inside your home directory. This is where you story all you scripts because you might not want to touch `/bin/` or `/usr/bin/`. The `~/bin/` directory might already be part of your shell's search path, if not you should be able to append it (in bash) with the following command:  
+Typically you create a `~/bin/` directory inside your home directory. This is where you store all you scripts because you might not want to touch `/bin/` or `/usr/bin/`. The `~/bin/` directory might already be part of your shell's search path, if not you should be able to append it (in bash) with the following command:  
 `PATH=$PATH:~/bin`  
 Put this line into your `.bashrc` to make it a permanent change. If you want to undo the change, simply remove the line from your `.bashrc` file.
 
@@ -45,6 +45,6 @@ In order to easily play music with this program, it also uses `cvlc` and `nvlc`.
 
 Lastly the filebrowser that is used is `nautilus`. If you don't have that, you can either:  
   - Try to install `nautilus`
-  - change the `browser` variable in the top of the program to contain the command for your browser  
+  - change the `browser` variable in the top of the program to contain the command for your filebrowser  
   
 For the latter option you might also have to tweak the two lines of code which make use of the `$browser` command because the syntax might be a little different.
